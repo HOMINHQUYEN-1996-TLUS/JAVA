@@ -5,14 +5,13 @@ public class hello {
 
     public static void main(String[] arg) {
 
-        System.out.print("Nhap vao a : ");
-        int a = Input.nextInt();
-
-        ThapphanToNhiphan(a);
+        ThapphanToNhiphan();
         NhiphanToThapphan();
     }
 
-    static void ThapphanToNhiphan(int a) {
+    static void ThapphanToNhiphan() {
+        System.out.print("Nhap vao a : ");
+        int a = Input.nextInt();
         String nhiphan = "";
         while (a > 0) {
             if (a % 2 == 1) {
