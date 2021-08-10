@@ -96,4 +96,24 @@ public class btvn {
             }
         }
     }
+
+    public static boolean kiemtraSDT() {
+        System.out.print("Nhap vao chuoi s : ");
+        String s = Input.next();
+        char[] schuoi = s.toCharArray();
+        boolean check = false;
+        for (int i = 0; i < schuoi.length; i++) {
+            if (schuoi[0] != '0' && schuoi[0] != '+') {
+                check = false;
+            } else {
+                if (schuoi[i] >= 48 && schuoi[i] <= 57) {
+                    check = true;
+                } else {
+                    check = false;
+                }
+            }
+        }
+
+        return check;
+    }
 }

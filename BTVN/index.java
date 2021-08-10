@@ -5,6 +5,7 @@ public class index {
         // System.out.println(btvn.bai6());
         // btvn.bai7();
         // btvn.bai8();
-        btvn.bai4();
+        // btvn.bai4();
+        System.out.println(btvn.kiemtraSDT());
     }
 }
