@@ -3,6 +3,19 @@ import java.util.Scanner;
 public class btvn {
     public static Scanner Input = new Scanner(System.in);
 
+    public static void bai4() {
+        int count = 0;
+        System.out.print("Nhap vao chuoi s : ");
+        String s = Input.next();
+        char[] schuoi = s.toCharArray();
+        for (int i = 0; i < schuoi.length; i++) {
+            if (schuoi[i] == 'o' || schuoi[i] == 'i' || schuoi[i] == 'a' || schuoi[i] == 'e' || schuoi[i] == 'u') {
+                count++;
+            }
+        }
+        System.out.println("co " + count + " ky tu nguyen am");
+    }
+
     public static void bai5() {
         System.out.print("Nhap vao chuoi s : ");
         String s = Input.next();

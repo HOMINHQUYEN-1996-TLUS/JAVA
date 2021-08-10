@@ -4,6 +4,7 @@ public class index {
         // btvn.bai5();
         // System.out.println(btvn.bai6());
         // btvn.bai7();
-        btvn.bai8();
+        // btvn.bai8();
+        btvn.bai4();
     }
 }
