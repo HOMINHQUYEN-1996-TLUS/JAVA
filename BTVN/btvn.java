@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class btvn {
     public static Scanner Input = new Scanner(System.in);
 
-    public static void bai4() {
+    public void bai4() {
         int count = 0;
         System.out.print("Nhap vao chuoi s : ");
         String s = Input.next();
@@ -16,7 +16,7 @@ public class btvn {
         System.out.println("co " + count + " ky tu nguyen am");
     }
 
-    public static void bai5() {
+    public void bai5() {
         System.out.print("Nhap vao chuoi s : ");
         String s = Input.next();
         String temp = "";
@@ -30,7 +30,7 @@ public class btvn {
             System.out.println("Khong phai chuoi doi xung");
     }
 
-    public static boolean bai6() {
+    public boolean bai6() {
         System.out.print("Nhap vao chuoi s : ");
         String s = Input.next();
         char[] schuoi = s.toCharArray();
@@ -46,7 +46,7 @@ public class btvn {
         return false;
     }
 
-    public static void bai7() {
+    public void bai7() {
         System.out.print("Nhap vao chuoi s : ");
         String s = Input.next();
         char[] schuoi = s.toCharArray();
@@ -73,7 +73,7 @@ public class btvn {
         }
     }
 
-    public static void bai8() {
+    public void bai8() {
 
         int[] a = new int[26];
         String check = "abcdefghijklmnoqprstuvxywz";
@@ -95,25 +95,5 @@ public class btvn {
                 System.out.println(charCheck[i] + "-" + a[i]);
             }
         }
-    }
-
-    public static boolean kiemtraSDT() {
-        System.out.print("Nhap vao chuoi s : ");
-        String s = Input.next();
-        char[] schuoi = s.toCharArray();
-        boolean check = false;
-        for (int i = 0; i < schuoi.length; i++) {
-            if (schuoi[0] != '0' && schuoi[0] != '+') {
-                check = false;
-            } else {
-                if (schuoi[i] >= 48 && schuoi[i] <= 57) {
-                    check = true;
-                } else {
-                    check = false;
-                }
-            }
-        }
-
-        return check;
     }
 }
