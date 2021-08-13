@@ -7,7 +7,8 @@ public class hello {
 
         // ThapphanToNhiphan();
         // NhiphanToThapphan();
-        xuatmang(nhapmang(5));
+        // xuatmang(nhapmang(5));
+        phantulonnhat(3);
     }
 
     static void ThapphanToNhiphan() {
@@ -59,5 +60,33 @@ public class hello {
             System.out.print(a[i] + "\t");
         }
         System.out.println();
+    }
+
+    static void phantulonnhat(int n) {
+        int[][] a = new int[n][n];
+        int max = a[0][0];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("a [" + i + "][" + j + "] : ");
+                a[i][j] = Input.nextInt();
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.println();
+            for (int j = 0; j < n; j++) {
+                System.out.print(a[i][j] + "\t");
+            }
+            System.out.println();
+        }
+        System.out.print("Nhap vao hang can tim max : ");
+        int i = Input.nextInt();
+
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] > max) {
+                max = a[i][j];
+            }
+        }
+        System.out.println("Phan tu lon nhat cua hang [ " + i + " ] : " + max);
     }
 }
