@@ -5,8 +5,9 @@ public class hello {
 
     public static void main(String[] arg) {
 
-        ThapphanToNhiphan();
-        NhiphanToThapphan();
+        // ThapphanToNhiphan();
+        // NhiphanToThapphan();
+        xuatmang(nhapmang(5));
     }
 
     static void ThapphanToNhiphan() {
@@ -43,5 +44,20 @@ public class hello {
             ketqua = ketqua + ((int) s.charAt(i) - 48) * Math.pow(2, s.length() - i - 1);
         }
         System.out.println("Ket qua = " + ketqua);
+    }
+
+    static int[] nhapmang(int n) {
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = Input.nextInt();
+        }
+        return a;
+    }
+
+    static void xuatmang(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + "\t");
+        }
+        System.out.println();
     }
 }
