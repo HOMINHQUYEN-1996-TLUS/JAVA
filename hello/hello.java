@@ -88,7 +88,5 @@ public class hello {
             }
         }
         System.out.println("Phan tu lon nhat cua hang [ " + i + " ] : " + max);
-        System.out.println("Test");
-        System.out.println("Nhan Test");
     }
 }
