@@ -5,8 +5,6 @@ public class index {
 
         Cat c1 = new Cat();
         c1.show();
-
-        Animal.sound();
     }
 }
 
